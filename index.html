@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ashish Sethi, B2B SaaS Product Marketing and Strategic Communications Portfolio">
+<title>Ashish Sethi · B2B SaaS Product Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E1116; --ink-2:#141a22; --ink-3:#1a212b;
+  --line:#262e39; --line-2:#333d4b;
+  --fg:#ECEAE3; --fg-2:#A7B0BD; --fg-3:#6E7784;
+  --gold:#E9B949; --gold-dim:rgba(233,185,73,.13);
+  --teal:#57b8a2;
+  --disp:"Space Grotesk",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ink);color:var(--fg);font-family:var(--body);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 15% -10%,rgba(233,185,73,.05),transparent 45%);
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:9px;margin:0 0 18px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--gold);display:inline-block}
+h2.sec{font-family:var(--disp);font-weight:600;font-size:clamp(26px,4vw,38px);line-height:1.08;letter-spacing:-.02em;margin:0 0 10px}
+.sec-note{color:var(--fg-2);max-width:64ch;margin:0 0 36px}
+header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(9px);background:rgba(14,17,22,.84);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{font-family:var(--mono);font-size:13px;letter-spacing:.04em;color:var(--fg)}
+.brand b{color:var(--gold);font-weight:500}
+.nav-links{display:flex;gap:22px;font-family:var(--mono);font-size:12.5px;color:var(--fg-2)}
+.nav-links a:hover{color:var(--gold)}
+.hero{padding:96px 0 82px;border-top:none}
+.hero .kick{font-family:var(--mono);color:var(--gold);font-size:13px;letter-spacing:.1em;margin-bottom:22px}
+.hero h1{font-family:var(--disp);font-weight:700;letter-spacing:-.03em;font-size:clamp(38px,7.2vw,74px);line-height:1.02;margin:0 0 24px;max-width:17ch}
+.hero h1 .hl{color:var(--gold)}
+.hero .lede{font-size:clamp(17px,2.1vw,20px);color:var(--fg-2);max-width:67ch;margin:0 0 38px}
+.statline{font-family:var(--mono);font-size:13px;color:var(--fg-2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-wrap:wrap;gap:10px 26px;background:var(--ink-2)}
+.statline b{color:var(--fg);font-weight:500}.statline .dot{color:var(--gold)}
+.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:48px}
+.about-grid p{margin:0 0 16px;color:var(--fg)}.about-grid p.muted{color:var(--fg-2)}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--ink-2)}
+.dcell{padding:13px 22px;border-top:1px solid var(--line)}.dcell:nth-child(1),.dcell:nth-child(2){border-top:none}.dcell:nth-child(even){border-left:1px solid var(--line)}
+.dtop{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.dname{font-family:var(--mono);font-size:13px;color:var(--fg);font-weight:500}.dwhat{color:var(--fg-2);font-size:12.5px;margin-top:4px;line-height:1.5}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.04em;padding:4px 9px;border-radius:20px;border:1px solid var(--line-2);color:var(--fg-2);white-space:nowrap;display:inline-block}
+.chip.cy{color:var(--gold);border-color:var(--gold-dim);background:var(--gold-dim)}.chip.av{color:var(--teal);border-color:rgba(87,184,162,.25);background:rgba(87,184,162,.09)}
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--ink-2)}
+.panel h3{font-family:var(--disp);font-weight:600;font-size:20px;margin:0 0 4px}.panel .ptag{font-family:var(--mono);font-size:12px;color:var(--fg-3);margin-bottom:18px;display:block}
+.featlist{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}.featlist li{font-family:var(--mono);font-size:12.5px;color:var(--fg-2);border:1px solid var(--line);border-radius:7px;padding:6px 11px}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--ink-2);transition:border-color .2s,transform .2s;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.card::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--gold);transition:width .3s}.card:hover{border-color:var(--line-2);transform:translateY(-3px)}.card:hover::before{width:100%}
+.idx{font-family:var(--mono);font-size:12px;color:var(--gold)}.ctag{float:right;font-family:var(--mono);font-size:11px;color:var(--fg-3)}
+.card h3{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-.01em;margin:8px 0 14px}.lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3);display:block;margin:12px 0 3px}.card p{margin:0;color:var(--fg-2);font-size:14.5px}
+.skills{margin-top:auto;padding-top:18px;display:flex;flex-wrap:wrap;gap:6px}.skills span{font-family:var(--mono);font-size:11px;color:var(--fg-2);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.agroup{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:10px;margin:46px 0 10px}.agroup:first-of-type{margin-top:0}
+.asset-row{display:grid;grid-template-columns:132px 1fr auto;gap:20px;align-items:center;padding:16px 0;border-top:1px solid var(--line)}
+.asset-row:first-of-type{border-top:none}.shot{width:132px;height:92px;border:1px solid var(--line-2);border-radius:8px;background:var(--ink-3);overflow:hidden;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:var(--fg-3);text-align:center;padding:10px}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}.atitle{font-weight:500}.ameta{font-family:var(--mono);font-size:12px;color:var(--fg-3);margin-top:3px}
+.go{font-family:var(--mono);font-size:12px;color:var(--gold);white-space:nowrap;border:1px solid rgba(233,185,73,.4);background:rgba(233,185,73,.07);border-radius:8px;padding:8px 14px;display:inline-flex;align-items:center}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 34px}.cap h3{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid var(--line)}.cap ul{list-style:none;margin:0;padding:0}.cap li{color:var(--fg-2);font-size:14.5px;padding:3px 0}
+.ws-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px}.ws-item{display:flex;gap:14px;padding:6px 0}.ws-item .n{font-family:var(--mono);color:var(--gold);font-size:13px;flex:none;padding-top:2px}.ws-item p{margin:0;color:var(--fg-2)}.ws-item b{color:var(--fg);font-weight:600;font-family:var(--disp)}
+.contact{background:var(--ink-2)}.contact-in{border:1px solid var(--line);border-radius:14px;padding:44px;text-align:center;background:radial-gradient(circle at 50% -30%,rgba(233,185,73,.08),transparent 60%)}.contact h2{font-family:var(--disp);font-weight:700;font-size:clamp(26px,4.5vw,40px);letter-spacing:-.02em;margin:0 0 12px}.contact p{color:var(--fg-2);max-width:52ch;margin:0 auto 28px}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.btn{font-family:var(--mono);font-size:13px;padding:12px 20px;border-radius:9px;border:1px solid var(--line-2);color:var(--fg);transition:.18s}.btn:hover{border-color:var(--gold);color:var(--gold)}.btn.primary{background:var(--gold);color:#171203;border-color:var(--gold);font-weight:500}
+footer{border-top:1px solid var(--line);padding:30px 0 46px;font-family:var(--mono);font-size:12px;color:var(--fg-3)}.foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.rv.in{opacity:1;transform:none}
+@media(max-width:800px){.about-grid,.prod-grid,.work-grid{grid-template-columns:1fr}.about-grid{gap:22px}.cap-grid{grid-template-columns:1fr 1fr}.nav-links{display:none}}
+@media(max-width:700px){.ws-grid{grid-template-columns:1fr}.asset-row{grid-template-columns:1fr;gap:12px}.shot{width:100%;height:170px}.go{justify-self:start}}
+@media(max-width:640px){section{padding:52px 0}.hero{padding:64px 0 52px}.wrap{padding:0 20px}.dgrid{grid-template-columns:1fr}.dcell:nth-child(2){border-top:1px solid var(--line)}.dcell:nth-child(even){border-left:none}.cap-grid{grid-template-columns:1fr}.contact-in{padding:32px 22px}}
+
+.drive-embed{margin-top:28px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--ink-2)}
+.drive-embed-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 20px;border-bottom:1px solid var(--line)}
+.drive-title{font-family:var(--disp);font-weight:600;font-size:17px}.drive-meta{font-family:var(--mono);font-size:11.5px;color:var(--fg-3);margin-top:3px}
+.drive-embed iframe{display:block;width:100%;height:650px;border:0;background:#fff}
+@media(max-width:640px){.drive-embed-head{align-items:flex-start;flex-direction:column}.drive-embed iframe{height:560px}}
+
+
+.asset-tabs{display:flex;gap:8px;border-bottom:1px solid var(--line);margin-top:30px}
+.asset-tab{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;color:var(--fg-3);font-family:var(--mono);font-size:12px;padding:12px 15px;cursor:pointer}
+.asset-tab:hover,.asset-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.asset-panel{display:none;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--ink-2);margin-top:18px}
+.asset-panel.active{display:block}
+.embed-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 20px;border-bottom:1px solid var(--line)}
+.embed-title{font-family:var(--disp);font-size:17px;font-weight:600}.embed-meta{font-family:var(--mono);font-size:11.5px;color:var(--fg-3);margin-top:4px}
+.resource-frame{display:block;width:100%;height:680px;border:0;background:#fff}
+.drive-frame{background:#fff}.cybage-frame{background:#fff}
+.embed-note,.frame-fallback{font-family:var(--mono);font-size:11.5px;color:var(--fg-3);margin:0;padding:13px 20px;border-top:1px solid var(--line)}
+.frame-fallback b{color:var(--fg-2);font-weight:500}
+@media(max-width:640px){.embed-head{align-items:flex-start;flex-direction:column}.resource-frame{height:560px}.asset-tabs{overflow:auto}.asset-tab{white-space:nowrap}}
+
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <div class="brand">Ashish Sethi <b>// B2B SaaS GTM</b></div>
+    <nav class="nav-links">
+      <a href="#about">About</a><a href="#products">Products</a><a href="#domains">Domains</a><a href="#work">Work</a><a href="#assets">Assets</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="kick">8+ years of marketing · B2B SaaS · communication</div>
+  <h1>I turn complex B2B products into <span class="hl">clear stories that move people.</span></h1>
+  <p class="lede">I work across product marketing, strategic content and communications, from understanding a complex solution and finding the right message to creating the actual assets that help customers, prospects, leaders and employees understand why it matters.</p>
+  <div class="statline">
+    <span><span class="dot">▹</span> <b>Cybage</b> · B2B technology & solution marketing</span>
+    <span><span class="dot">▹</span> <b>Advids</b> · Writer-Director</span>
+    <span><span class="dot">▹</span> <b>Product · Content · SEO · Video · Communication</b></span>
+  </div>
+</section>
+
+<section id="about" class="wrap rv">
+  <div class="about-grid">
+    <div><div class="eyebrow">01 · About</div><h2 class="sec">The short version</h2></div>
+    <div>
+      <p>I am a <b>B2B SaaS product marketing and strategic communications professional</b> with more than eight years of experience helping businesses explain complex products, solutions and ideas.</p>
+      <p>My work combines product understanding with strong storytelling. I work across product explainers, solution pitches, presales content, case studies, blogs, whitepapers, videos, SEO and internal communications.</p>
+      <p class="muted">I am particularly valuable in roles where the gap between strategy and execution matters. I can help find the story, shape the message and then build the assets needed to take it to the audience.</p>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="wrap rv">
+  <div class="eyebrow">02 · Products</div>
+  <h2 class="sec">Product & solution work I've helped bring to market</h2>
+  <p class="sec-note">My experience has involved working with enterprise technology solutions and translating complex capabilities into customer-facing communication.</p>
+  <div class="prod-grid">
+    <div class="panel">
+      <h3>Enterprise Technology Solutions</h3>
+      <span class="ptag">Cybage · solution marketing, presales and customer communication</span>
+      <ul class="featlist">
+        <li>Solution storytelling</li><li>Product explainers</li><li>Presales pitches</li><li>Case studies</li><li>Whitepapers</li><li>Sales presentations</li><li>Customer-facing collateral</li><li>Video scripts</li><li>SEO content</li><li>Thought leadership</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Digital & Video Products</h3>
+      <span class="ptag">Advids · GravitasQ · Buzzle · freelance</span>
+      <ul class="featlist">
+        <li>Product videos</li><li>Explainer videos</li><li>eLearning</li><li>Landing pages</li><li>SEO blogs</li><li>Launch communication</li><li>Social content</li><li>Emailers</li><li>Customer education</li><li>Internal campaigns</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="domains" class="wrap rv">
+  <div class="eyebrow">03 · Coverage</div>
+  <h2 class="sec">B2B marketing domains I've worked in</h2>
+  <p class="sec-note">Every domain below maps to real work from my experience across SaaS, technology, video, content and communications.</p>
+  <div class="dgrid">
+    <div class="dcell"><div class="dtop"><span class="dname">Product Messaging</span><span class="chip cy">Cybage</span></div><div class="dwhat">Turning product and solution capabilities into clear customer-facing narratives.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Presales Enablement</span><span class="chip cy">Cybage</span></div><div class="dwhat">Pitches, presentations, explainers and supporting sales collateral.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">SEO Strategy</span><span class="chip cy">Cybage</span></div><div class="dwhat">Keyword mapping and content restructuring across 500+ websites.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Organic Growth</span><span class="chip cy">Cybage</span></div><div class="dwhat">Content and SEO work contributing to 42% growth in organic traffic.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Product Video</span><span class="chip av">Advids</span></div><div class="dwhat">150+ projects led from discovery and scripting to final delivery.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Technical Storytelling</span><span class="chip av">Multiple</span></div><div class="dwhat">Making technical and business complexity easier for different audiences to understand.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Internal Communication</span><span class="chip cy">Cybage</span></div><div class="dwhat">Leadership notes, newsletters and employee engagement campaigns.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">eLearning & Enablement</span><span class="chip av">GravitasQ</span></div><div class="dwhat">80+ scripts supporting financial literacy and product education.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Content Strategy</span><span class="chip cy">Cybage</span></div><div class="dwhat">Market research and industry insight used to shape content direction.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Website Content</span><span class="chip cy">Multiple</span></div><div class="dwhat">WordPress publishing, optimisation and content quality management.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Executive Communication</span><span class="chip cy">Cybage</span></div><div class="dwhat">Leadership messaging that balances clarity, tone and organisational context.</div></div>
+    <div class="dcell"><div class="dtop"><span class="dname">Cross-functional Collaboration</span><span class="chip av">Multiple</span></div><div class="dwhat">Working with presales, design, analytics, marketing and subject matter experts.</div></div>
+  </div>
+</section>
+
+<section id="work" class="wrap rv">
+  <div class="eyebrow">04 · Selected work</div>
+  <h2 class="sec">Flagship projects</h2>
+  <p class="sec-note">A selection of the problems I have solved across product storytelling, SEO, video, internal communications and enablement.</p>
+  <div class="work-grid">
+    <div class="card"><span class="idx">01</span><span class="ctag">Cybage</span><h3>Customer-facing solution storytelling</h3><span class="lbl">Problem</span><p>Complex enterprise solutions need to make sense to customers before they can make a business case for them.</p><span class="lbl">What I did</span><p>Created explainers, solution pitches, case studies, newsletters, blogs, whitepapers and more than 100 video scripts with presales and subject matter experts.</p><div class="skills"><span>Product Messaging</span><span>Presales</span><span>Storytelling</span></div></div>
+    <div class="card"><span class="idx">02</span><span class="ctag">Cybage</span><h3>SEO improvement at scale</h3><span class="lbl">Problem</span><p>Large website portfolios can lose organic visibility when keyword intent and content structure drift apart.</p><span class="lbl">What I did</span><p>Implemented targeted keyword mapping and content restructuring across more than 500 websites, contributing to a 42% increase in organic traffic.</p><div class="skills"><span>SEO</span><span>Content Strategy</span><span>Growth</span></div></div>
+    <div class="card"><span class="idx">03</span><span class="ctag">Advids</span><h3>150+ video projects</h3><span class="lbl">Problem</span><p>Brands needed concise visual stories that explained products, captured attention and aligned stakeholders.</p><span class="lbl">What I did</span><p>Led projects from client discovery and creative direction to scripts, presentations, voiceovers, timelines and final delivery.</p><div class="skills"><span>Video</span><span>Creative Direction</span><span>Product Storytelling</span></div></div>
+    <div class="card"><span class="idx">04</span><span class="ctag">Cybage</span><h3>Internal communication & engagement</h3><span class="lbl">Problem</span><p>Internal messages often fail because employees do not immediately see why the message matters to them.</p><span class="lbl">What I did</span><p>Developed leadership notes, newsletters and engagement communication designed to improve participation and strengthen internal culture.</p><div class="skills"><span>Internal Comms</span><span>Leadership</span><span>Engagement</span></div></div>
+    <div class="card"><span class="idx">05</span><span class="ctag">GravitasQ</span><h3>80+ learning & product education scripts</h3><span class="lbl">Problem</span><p>New products and complex financial concepts need to be taught clearly without overwhelming the audience.</p><span class="lbl">What I did</span><p>Created more than 80 eLearning scripts and supporting content for financial literacy initiatives and product launches.</p><div class="skills"><span>Enablement</span><span>eLearning</span><span>Product Education</span></div></div>
+    <div class="card"><span class="idx">06</span><span class="ctag">Buzzle</span><h3>Content-led audience growth</h3><span class="lbl">Problem</span><p>Organic content needs to build sustained visibility rather than simply fill a publishing calendar.</p><span class="lbl">What I did</span><p>Researched and authored 75+ blogs and contributed to a 38% traffic increase through social content strategy.</p><div class="skills"><span>SEO Content</span><span>Social</span><span>Growth</span></div></div>
+  </div>
+</section>
+
+<section id="assets" class="wrap rv">
+  <div class="eyebrow">05 · Selected assets</div>
+  <h2 class="sec">Live work & published resources</h2>
+  <p class="sec-note">Browse the actual public work samples from my portfolio and the Cybage Resource Center, where my professional work has been published alongside enterprise technology content.</p>
+
+  <div class="asset-tabs">
+    <button class="asset-tab active" data-asset-panel="drive-panel">My Work Samples</button>
+    <button class="asset-tab" data-asset-panel="cybage-panel">Cybage Resource Center</button>
+  </div>
+
+  <div class="asset-panel active" id="drive-panel">
+    <div class="embed-head">
+      <div>
+        <div class="embed-title">Ashish Sethi · Work Samples</div>
+        <div class="embed-meta">Product marketing · SEO · video · strategic communication · learning</div>
+      </div>
+      <a class="go" href="https://drive.google.com/drive/folders/1n0GWSdKqEEUliY2zadhikhetRuguIS1C" target="_blank" rel="noopener">Open full portfolio ↗</a>
+    </div>
+    <iframe class="resource-frame drive-frame" src="https://drive.google.com/embeddedfolderview?id=1n0GWSdKqEEUliY2zadhikhetRuguIS1C#grid" title="Ashish Sethi work samples in Google Drive" loading="lazy"></iframe>
+    <p class="embed-note">Every file shown above is an individual public asset. Select any item to open that specific work sample.</p>
+  </div>
+
+  <div class="asset-panel" id="cybage-panel">
+    <div class="embed-head">
+      <div>
+        <div class="embed-title">Cybage · Resource Center</div>
+        <div class="embed-meta">Blogs · white papers · success stories · enterprise technology insights</div>
+      </div>
+      <a class="go" href="https://www.cybage.com/about-us/resource-center" target="_blank" rel="noopener">Open Resource Center ↗</a>
+    </div>
+    <iframe class="resource-frame cybage-frame" src="https://www.cybage.com/about-us/resource-center" title="Cybage Resource Center" loading="lazy"></iframe>
+    <div class="frame-fallback">
+      <b>If your browser blocks the live preview:</b> the resource center is still available through the button above.
+    </div>
+  </div>
+
+  <div class="agroup">Portfolio access</div>
+  <div class="asset-row">
+    <div class="shot">ALL<br>WORK</div>
+    <div><div class="atitle">My complete selected work portfolio</div><div class="ameta">Browse individual public files, documents and samples directly from Google Drive.</div></div>
+    <a class="go" href="https://drive.google.com/drive/folders/1n0GWSdKqEEUliY2zadhikhetRuguIS1C" target="_blank" rel="noopener">Browse work ↗</a>
+  </div>
+  <div class="asset-row">
+    <div class="shot">CYBAGE<br>RESOURCES</div>
+    <div><div class="atitle">Published enterprise technology resources</div><div class="ameta">Blogs · white papers · success stories · industry insights</div></div>
+    <a class="go" href="https://www.cybage.com/about-us/resource-center" target="_blank" rel="noopener">Browse resources ↗</a>
+  </div>
+</section>
+
+<section id="capabilities" class="wrap rv">
+  <div class="eyebrow">06 · Capabilities</div>
+  <h2 class="sec">What I bring, by capability</h2>
+  <div class="cap-grid">
+    <div class="cap"><h3>Product Marketing</h3><ul><li>Messaging & positioning</li><li>Value proposition</li><li>Product explainers</li><li>Solution storytelling</li><li>Go-to-market content</li></ul></div>
+    <div class="cap"><h3>Sales Enablement</h3><ul><li>Solution pitches</li><li>Sales decks</li><li>Case studies</li><li>Whitepapers</li><li>Presales collateral</li></ul></div>
+    <div class="cap"><h3>Content Strategy</h3><ul><li>Content planning</li><li>Thought leadership</li><li>SEO & AEO</li><li>Keyword strategy</li><li>Website content</li></ul></div>
+    <div class="cap"><h3>Video & Multimedia</h3><ul><li>Video scripts</li><li>Creative direction</li><li>Product videos</li><li>Explainer videos</li><li>Production coordination</li></ul></div>
+    <div class="cap"><h3>Strategic Communication</h3><ul><li>Internal communication</li><li>Leadership messaging</li><li>Newsletters</li><li>Employee engagement</li><li>Storytelling</li></ul></div>
+    <div class="cap"><h3>Growth & Operations</h3><ul><li>Google Ads</li><li>Google Analytics</li><li>HubSpot</li><li>WordPress</li><li>AI-assisted workflows</li></ul></div>
+  </div>
+</section>
+
+<section class="wrap rv">
+  <div class="eyebrow">07 · How I work</div>
+  <h2 class="sec">Working style</h2>
+  <div class="ws-grid">
+    <div class="ws-item"><div class="n">▹</div><p><b>Understand before writing.</b><br>Good product communication starts with knowing the problem, the audience and the product underneath the message.</p></div>
+    <div class="ws-item"><div class="n">▹</div><p><b>Strategy and execution.</b><br>I can contribute to the message and then build the asset that carries it into the market.</p></div>
+    <div class="ws-item"><div class="n">▹</div><p><b>Close to the business.</b><br>I work across presales, marketing, design, analytics and subject matter experts to keep communication aligned.</p></div>
+    <div class="ws-item"><div class="n">▹</div><p><b>Make complexity useful.</b><br>My strongest work often involves simplifying technical information without making it shallow.</p></div>
+    <div class="ws-item"><div class="n">▹</div><p><b>Use evidence.</b><br>Research, search intent, performance data and audience context should improve the next version.</p></div>
+    <div class="ws-item"><div class="n">▹</div><p><b>Ship.</b><br>A good idea only becomes useful when it is translated into work people can actually see, use and respond to.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-in rv">
+    <h2>Let's talk B2B SaaS product marketing.</h2>
+    <p>I am open to opportunities in product marketing, product communications, content strategy and strategic communications where strong thinking and strong execution are both needed.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:ashishsethi1993@gmail.com">Email Ashish</a>
+      <a class="btn" href="https://www.linkedin.com/in/ashish-s-889885137/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <a class="btn" href="Ashish-Sethi-Resume.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap foot-in"><span>© 2026 Ashish Sethi · B2B SaaS Product Marketing Portfolio</span><span>Product · Content · Communication</span></div></footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>observer.observe(el));
+
+document.querySelectorAll('.asset-tab').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.asset-tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.asset-panel').forEach(x=>x.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(btn.dataset.assetPanel).classList.add('active');
+}));
+
+</script>
+</body>
+</html>
