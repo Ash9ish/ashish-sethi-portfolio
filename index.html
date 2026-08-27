@@ -26,6 +26,34 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
   text-transform:capitalize;
 }
 
+
+/* Case study thumbnails: use a true landscape crop instead of a full portrait-page preview */
+.case-study-row .asset-thumb{
+  width:300px;
+  height:170px;
+  background:#101821;
+}
+.case-study-row .asset-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 35%;
+  transform:scale(2.45);
+  transform-origin:center;
+}
+.case-study-row:hover .asset-thumb img{
+  transform:scale(2.58);
+}
+@media(max-width:760px){
+  .case-study-row .asset-thumb{
+    width:155px;
+    height:105px;
+  }
+  .case-study-row .asset-thumb img{
+    transform:scale(2.35);
+  }
+}
+
 </style>
 </head>
 <body>
@@ -45,23 +73,23 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
 <section id="published" class="wrap"><div class="eyebrow">03 · Published Work</div><h2 class="sec-title">Work You Can Open and Review</h2><div class="asset-group">
 <div class="group-title">Case Studies & Published Content</div>
 <p class="group-note">Enterprise technology customer stories, transformation narratives and solution outcomes.</p>
-<div class="asset-list"><a class="asset-row" href="assets/content/case-studies-01-implemented-servicenow-for-a-global-hospitality-leader.pdf" target="_blank" rel="noopener">
+<div class="asset-list"><a class="asset-row case-study-row" href="assets/content/case-studies-01-implemented-servicenow-for-a-global-hospitality-leader.pdf" target="_blank" rel="noopener">
 <div class="asset-thumb"><img src="assets/thumbs/case-studies-01.jpg" alt="Implemented ServiceNow for a Global Hospitality Leader thumbnail" loading="lazy"></div>
 <div class="asset-copy"><div class="asset-title">Implemented ServiceNow for a Global Hospitality Leader</div><div class="asset-meta">PDF · Case Studies & Published Content</div></div>
 <span class="asset-action">View ▹</span>
-</a><a class="asset-row" href="assets/content/case-studies-02-supported-a-premier-global-supply-chain-and-logistics-company-in-handling-exceptions-5x-fa.pdf" target="_blank" rel="noopener">
+</a><a class="asset-row case-study-row" href="assets/content/case-studies-02-supported-a-premier-global-supply-chain-and-logistics-company-in-handling-exceptions-5x-fa.pdf" target="_blank" rel="noopener">
 <div class="asset-thumb"><img src="assets/thumbs/case-studies-02.jpg" alt="Supported a Premier Global Supply Chain and Logistics Company in Handling Exceptions 5X Faster with a Supply Chain Simulator thumbnail" loading="lazy"></div>
 <div class="asset-copy"><div class="asset-title">Supported a Premier Global Supply Chain and Logistics Company in Handling Exceptions 5X Faster with a Supply Chain Simulator</div><div class="asset-meta">PDF · Case Studies & Published Content</div></div>
 <span class="asset-action">View ▹</span>
-</a><a class="asset-row" href="assets/content/case-studies-03-facilitated-long-term-adaptability-and-operational-agility-for-a-premier-enterprise-softwa.pdf" target="_blank" rel="noopener">
+</a><a class="asset-row case-study-row" href="assets/content/case-studies-03-facilitated-long-term-adaptability-and-operational-agility-for-a-premier-enterprise-softwa.pdf" target="_blank" rel="noopener">
 <div class="asset-thumb"><img src="assets/thumbs/case-studies-03.jpg" alt="Facilitated Long-Term Adaptability and Operational Agility for a Premier Enterprise Software Provider in the EHSQ Sector thumbnail" loading="lazy"></div>
 <div class="asset-copy"><div class="asset-title">Facilitated Long-Term Adaptability and Operational Agility for a Premier Enterprise Software Provider in the EHSQ Sector</div><div class="asset-meta">PDF · Case Studies & Published Content</div></div>
 <span class="asset-action">View ▹</span>
-</a><a class="asset-row" href="assets/content/case-studies-04-orchestrated-the-digital-transformation-to-create-an-integrated-omnichannel-experience-for.pdf" target="_blank" rel="noopener">
+</a><a class="asset-row case-study-row" href="assets/content/case-studies-04-orchestrated-the-digital-transformation-to-create-an-integrated-omnichannel-experience-for.pdf" target="_blank" rel="noopener">
 <div class="asset-thumb"><img src="assets/thumbs/case-studies-04.jpg" alt="Orchestrated the Digital Transformation to Create an Integrated Omnichannel Experience for a Leading Business Fuel Card Provider thumbnail" loading="lazy"></div>
 <div class="asset-copy"><div class="asset-title">Orchestrated the Digital Transformation to Create an Integrated Omnichannel Experience for a Leading Business Fuel Card Provider</div><div class="asset-meta">PDF · Case Studies & Published Content</div></div>
 <span class="asset-action">View ▹</span>
-</a><a class="asset-row" href="assets/content/case-studies-05-helped-an-airline-it-solutions-provider-enhance-productivity-efficiency-and-revenue-by-imp.pdf" target="_blank" rel="noopener">
+</a><a class="asset-row case-study-row" href="assets/content/case-studies-05-helped-an-airline-it-solutions-provider-enhance-productivity-efficiency-and-revenue-by-imp.pdf" target="_blank" rel="noopener">
 <div class="asset-thumb"><img src="assets/thumbs/case-studies-05.jpg" alt="Helped an Airline IT Solutions Provider Enhance Productivity, Efficiency and Revenue by Implementing an Advanced Booking Engine thumbnail" loading="lazy"></div>
 <div class="asset-copy"><div class="asset-title">Helped an Airline IT Solutions Provider Enhance Productivity, Efficiency and Revenue by Implementing an Advanced Booking Engine</div><div class="asset-meta">PDF · Case Studies & Published Content</div></div>
 <span class="asset-action">View ▹</span>
