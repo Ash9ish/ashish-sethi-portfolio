@@ -64,24 +64,51 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
   .case-study-row{grid-template-columns:155px minmax(0,1fr) !important}
   .case-study-row .asset-thumb{width:155px !important;height:105px !important}
 }
+
+/* Experience */
+.experience-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:52px}
+.timeline{border-top:1px solid var(--line)}
+.exp-item{display:grid;grid-template-columns:150px minmax(0,1fr);gap:28px;padding:22px 0;border-bottom:1px solid var(--line)}
+.exp-date{font:11px var(--mono);color:var(--gold);line-height:1.5}
+.exp-company{font:600 18px var(--display);margin:0 0 5px}
+.exp-role{font-size:14px;color:var(--muted)}
+.domain-card{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:24px}
+.domain-card h3{font-size:20px;margin:0 0 12px}
+.domain-card p{color:var(--muted);font-size:14px;margin:0 0 18px}
+.domain-tags{display:flex;flex-wrap:wrap;gap:8px}
+.domain-tags span{font:11px var(--mono);color:var(--text);border:1px solid var(--line2);padding:7px 9px;border-radius:5px}
+@media(max-width:850px){.experience-grid{grid-template-columns:1fr}.exp-item{grid-template-columns:130px minmax(0,1fr)}}
+@media(max-width:560px){.exp-item{grid-template-columns:1fr;gap:7px}.exp-date{order:2}}
+
 </style>
 
 </head>
 <body>
-<nav><div class="wrap navin"><div class="brand">Ashish Sethi <b>// B2B SaaS GTM</b></div><div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#published">Published Work</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="wrap navin"><div class="brand">Ashish Sethi <b>// B2B SaaS GTM</b></div><div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#published">Published Work</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a></div></div></nav>
 
 <section class="hero wrap"><div class="hero-grid"><div><div class="kicker">B2B SaaS Product Marketing · Strategic Communication</div><h1>I Build <span>Go-to-Market Stories</span> for Complex Products.</h1><p class="lede">I turn complex technology into clear, credible stories across product marketing, solution communication, sales enablement, SEO, video and strategic communications.</p><div class="statbar"><span><span class="dot">▹</span> <b>10+ years</b> experience</span><span><span class="dot">▹</span> <b>100+ video scripts</b></span><span><span class="dot">▹</span> <b>150+ projects</b> delivered</span><span><span class="dot">▹</span> <b>500+ websites</b> SEO work</span></div></div><div class="hero-photo"><img src="assets/profile/ashish-sethi.png" alt="Ashish Sethi"></div></div></section>
 
 <section id="about" class="wrap"><div class="about"><div><div class="eyebrow">01 · About</div><h2 class="sec-title">The Short Version</h2></div><div><p>I am a <b>B2B SaaS product marketing and strategic communications professional</b> with more than ten years of experience helping businesses explain complex products, solutions and ideas.</p><p>My work spans product and solution storytelling, sales enablement, case studies, thought leadership, SEO, video, internal communication and executive messaging.</p><p>I am strongest where strategy and execution meet. I can understand the product, identify the message, shape the narrative and build the assets that carry it to customers, prospects and employees.</p></div></div></section>
 
-<section id="work" class="wrap"><div class="eyebrow">02 · Selected Work</div><h2 class="sec-title">Projects & Outcomes</h2><p class="sec-note">A cross-functional portfolio built around the challenge of making complex B2B technology understandable and compelling.</p><div class="grid2">
+
+<section id="experience" class="wrap"><div class="eyebrow">02 · Experience</div><h2 class="sec-title">Where I've Built My Experience</h2><p class="sec-note">A career spanning content, technology storytelling, video and B2B communications.</p><div class="experience-grid"><div class="timeline">
+<div class="exp-item"><div class="exp-date">NOV 2020 — PRESENT</div><div><div class="exp-company">Cybage Software Pvt. Ltd.</div><div class="exp-role">Senior Content Writer</div></div></div>
+<div class="exp-item"><div class="exp-date">MAR 2020 — NOV 2020</div><div><div class="exp-company">GravitasQ Stories</div><div class="exp-role">Content Writer</div></div></div>
+<div class="exp-item"><div class="exp-date">SEPT 2019 — MAR 2020</div><div><div class="exp-company">Freelance</div><div class="exp-role">Content Writer</div></div></div>
+<div class="exp-item"><div class="exp-date">SEPT 2017 — SEPT 2019</div><div><div class="exp-company">Advids</div><div class="exp-role">Writer-Director</div></div></div>
+<div class="exp-item"><div class="exp-date">JUL 2016 — AUG 2017</div><div><div class="exp-company">Buzzle Software Solutions</div><div class="exp-role">Content Writer</div></div></div>
+</div>
+<div class="domain-card"><div class="idx">DOMAIN EXPERIENCE</div><h3>Industries I've Worked Across</h3><div class="domain-tags"><span>Software &amp; Hi-Tech</span><span>Travel &amp; Hospitality</span><span>AI</span><span>ERP &amp; CRM Solutions</span><span>SaaS</span><span>Cloud</span><span>Fintech</span></div></div></div></section>
+
+
+<section id="work" class="wrap"><div class="eyebrow">03 · Selected Work</div><h2 class="sec-title">Projects & Outcomes</h2><p class="sec-note">A cross-functional portfolio built around the challenge of making complex B2B technology understandable and compelling.</p><div class="grid2">
 <div class="card"><span class="idx">01</span><span class="tag">PRODUCT MARKETING</span><h3>Customer-Facing Solution Storytelling</h3><p>Created explainers, solution pitches, case studies, whitepapers and more than 100 video scripts with subject matter experts and business teams.</p><div class="mini"><span>Messaging</span><span>Presales</span><span>Storytelling</span></div></div>
 <div class="card"><span class="idx">02</span><span class="tag">SEO & CONTENT</span><h3>Organic Growth at Scale</h3><p>Worked on keyword mapping and content restructuring across more than 500 websites, contributing to a 42% increase in organic traffic.</p><div class="mini"><span>SEO</span><span>Content Strategy</span><span>Growth</span></div></div>
 <div class="card"><span class="idx">03</span><span class="tag">VIDEO</span><h3>150+ Video Projects</h3><p>Led work from discovery and creative direction through scripts, presentations, voiceovers, production coordination and final delivery.</p><div class="mini"><span>Video</span><span>Creative Direction</span><span>Explainers</span></div></div>
 <div class="card"><span class="idx">04</span><span class="tag">COMMUNICATION</span><h3>Internal & Employee Engagement</h3><p>Developed leadership notes, newsletters and engagement campaigns designed to make important business messages clearer and more engaging.</p><div class="mini"><span>Internal Comms</span><span>Leadership</span><span>Engagement</span></div></div>
 </div></section>
 
-<section id="published" class="wrap"><div class="eyebrow">03 · Published Work</div><h2 class="sec-title">Work You Can Open and Review</h2><div class="asset-group">
+<section id="published" class="wrap"><div class="eyebrow">04 · Published Work</div><h2 class="sec-title">Work You Can Open and Review</h2><div class="asset-group">
 <div class="group-title">Case Studies & Published Content</div>
 <p class="group-note">Enterprise technology customer stories, transformation narratives and solution outcomes.</p>
 <div class="asset-list"><a class="asset-row case-study-row" href="assets/content/case-studies-01-implemented-servicenow-for-a-global-hospitality-leader.pdf" target="_blank" rel="noopener">
@@ -273,7 +300,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
 <a class="resource-card" href="https://www.cybage.com/about-us/resource-center" target="_blank" rel="noopener"><div class="asset-thumb">CYBAGE<br>RESOURCE CENTER</div><div><div class="asset-title">Cybage Resource Center</div><div class="asset-meta">BLOGS · WHITEPAPERS · CASE STUDIES · INSIGHTS</div></div><span class="asset-action">Open ▹</span></a></div>
 </section>
 
-<section id="capabilities" class="wrap"><div class="eyebrow">04 · Capabilities</div><h2 class="sec-title">What I Bring</h2><div class="capgrid">
+<section id="capabilities" class="wrap"><div class="eyebrow">05 · Capabilities</div><h2 class="sec-title">What I Bring</h2><div class="capgrid">
 <div class="cap"><h3>Product Marketing</h3><ul><li>Messaging & positioning</li><li>Value propositions</li><li>Product explainers</li><li>Solution storytelling</li><li>Go-to-market content</li></ul></div>
 <div class="cap"><h3>Sales Enablement</h3><ul><li>Solution pitches</li><li>Sales decks</li><li>Case studies</li><li>Whitepapers</li><li>Presales collateral</li></ul></div>
 <div class="cap"><h3>Content Strategy</h3><ul><li>SEO & AEO</li><li>Thought leadership</li><li>Keyword strategy</li><li>Website content</li><li>Editorial planning</li></ul></div>
