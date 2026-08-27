@@ -21,29 +21,33 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
 @media(max-width:850px){.hero-grid{grid-template-columns:1fr 210px;gap:28px}.about{grid-template-columns:1fr 1.7fr}.capgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.wrap{padding:0 18px}.navlinks{display:none}section{padding:55px 0}.hero{padding:62px 0}.hero-grid{grid-template-columns:1fr}.hero-photo{display:none}.about,.grid2{grid-template-columns:1fr}.asset-row,.resource-card{grid-template-columns:140px minmax(0,1fr);gap:16px}.asset-thumb{width:140px;height:104px}.asset-title{font-size:15px}.asset-action{grid-column:2;justify-self:start}.capgrid{grid-template-columns:1fr}.sec-title{font-size:32px}}
 
-/* Display titles use the authored, consistent Title Case in the HTML */
+/* Titles use the consistent Title Case authored in the HTML */
 .sec-title,.project h3,.capability h3,.feature-card h3,.resource-card h3,.asset-title,.group-title,.hero h1{
   text-transform:none;
 }
 
 
-/* Curated case-study thumbnails */
+/* Case study rows: reserve enough grid space for the 300px landscape thumbnails */
+.case-study-row{
+  grid-template-columns:300px minmax(0,1fr) auto;
+}
 .case-study-row .asset-thumb{
   width:300px;
   height:170px;
   background:#101821;
 }
-.case-study-row .asset-thumb img{
+.case-study-row .asset-thumb img,
+.case-study-row:hover .asset-thumb img{
   width:100%;
   height:100%;
   object-fit:cover;
   object-position:center;
   transform:none;
 }
-.case-study-row:hover .asset-thumb img{
-  transform:none;
-}
 @media(max-width:760px){
+  .case-study-row{
+    grid-template-columns:155px minmax(0,1fr);
+  }
   .case-study-row .asset-thumb{
     width:155px;
     height:105px;
@@ -51,15 +55,17 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
 }
 
 
-/* Final thumbnail override: show the curated landscape artwork without inherited zoom */
-.case-study-row .asset-thumb img,
-.case-study-row:hover .asset-thumb img{
-  transform:none !important;
-  object-fit:cover !important;
-  object-position:center !important;
+/* Safety override: prevent any case-study title or thumbnail overlap */
+.case-study-row{grid-template-columns:300px minmax(0,1fr) auto !important}
+.case-study-row .asset-copy{min-width:0}
+.case-study-row .asset-thumb{width:300px !important;height:170px !important}
+.case-study-row .asset-thumb img{transform:none !important}
+@media(max-width:760px){
+  .case-study-row{grid-template-columns:155px minmax(0,1fr) !important}
+  .case-study-row .asset-thumb{width:155px !important;height:105px !important}
 }
-
 </style>
+
 </head>
 <body>
 <nav><div class="wrap navin"><div class="brand">Ashish Sethi <b>// B2B SaaS GTM</b></div><div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#published">Published Work</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a></div></div></nav>
@@ -267,7 +273,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
 <div class="asset-copy"><div class="asset-title">Steps Challenge</div><div class="asset-meta">IMAGE · Employee Communications</div></div>
 <span class="asset-action">View ▹</span>
 </a></div></div>
-<div class="asset-group"><div class="group-title">External Published Resources</div><p class="group-note">Additional enterprise technology content available through the Cybage Resource Center.</p>
+<div class="asset-group"><div class="group-title">External published resources</div><p class="group-note">Additional enterprise technology content available through the Cybage Resource Center.</p>
 <a class="resource-card" href="https://www.cybage.com/about-us/resource-center" target="_blank" rel="noopener"><div class="asset-thumb">CYBAGE<br>RESOURCE CENTER</div><div><div class="asset-title">Cybage Resource Center</div><div class="asset-meta">BLOGS · WHITEPAPERS · CASE STUDIES · INSIGHTS</div></div><span class="asset-action">Open ▹</span></a></div>
 </section>
 
@@ -280,6 +286,6 @@ section{padding:72px 0;border-top:1px solid var(--line)}.hero{padding:96px 0 78p
 <div class="cap"><h3>Growth & Operations</h3><ul><li>Google Ads</li><li>Google Analytics</li><li>HubSpot</li><li>WordPress</li><li>AI-assisted workflows</li></ul></div>
 </div></section>
 
-<section id="contact" class="wrap"><div class="contactbox"><h2>Let's Talk B2B SaaS GTM.</h2><p>Open to opportunities in B2B SaaS product marketing, product communications, content strategy and strategic communications.</p><div class="buttons"><a class="btn primary" href="mailto:ashishsethi1993@gmail.com">Email Ashish</a><a class="btn" href="https://www.linkedin.com/in/ashish-s-889885137/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="Ashish-Sethi-Resume.pdf" target="_blank">Download Resume</a></div></div></section>
+<section id="contact" class="wrap"><div class="contactbox"><h2>Let's talk B2B SaaS GTM.</h2><p>Open to opportunities in B2B SaaS product marketing, product communications, content strategy and strategic communications.</p><div class="buttons"><a class="btn primary" href="mailto:ashishsethi1993@gmail.com">Email Ashish</a><a class="btn" href="https://www.linkedin.com/in/ashish-s-889885137/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="Ashish-Sethi-Resume.pdf" target="_blank">Download Resume</a></div></div></section>
 <footer><div class="wrap foot"><span>© 2026 Ashish Sethi</span><span>Product · Content · Communication</span></div></footer>
 </body></html>
