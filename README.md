@@ -1,13 +1,19 @@
 # Ashish Sethi Portfolio
 
-## Upload to GitHub Pages
-1. Create a GitHub repository.
-2. Upload `index.html` and `Ashish-Sethi-Resume.pdf`.
-3. Go to Settings > Pages.
-4. Under Build and deployment, choose Deploy from a branch.
-5. Select `main` and `/root`.
-6. Save and wait for GitHub Pages to publish.
+GitHub Pages portfolio with 61 individual portfolio assets.
 
-This version intentionally follows the information architecture and visual style of the portfolio reference shared by Ashish, while using Ashish's own professional experience and work.
+## Upload to GitHub
 
-To display actual work samples directly on the website, replace the Google Drive folder links with individual public file links or upload the files into an `assets` folder and add previews to the Selected Assets section.
+1. Extract the ZIP.
+2. Upload `index.html`, `Ashish-Sethi-Resume.pdf`, and the entire `assets` folder to the root of your repository.
+3. Go to Settings → Pages.
+4. Choose `Deploy from a branch`.
+5. Choose `main` and `/(root)`.
+6. Save and wait for deployment.
+
+Every Published Work row links directly to the corresponding local portfolio file.
+
+Important: do not upload only `index.html`. The `assets` folder contains the thumbnails and actual portfolio files.
+
+
+Curated selection: the LinkedIn and Mailers category has been reduced to 8 selected Bajaj Finserv mailers and product-launch assets.
